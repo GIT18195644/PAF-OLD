@@ -104,7 +104,7 @@
 						</div>
 						<div class="text list_1_of_2">
 							<h3>Administrator</h3>
-							<div class="button"><span><a href="#">Click Here</a></span></div>
+							<div class="button"><span><a href="hms/admin">Click Here</a></span></div>
 				    	</div>
 					</div>	
 					<!--end-Administrator-Login-Button-->
