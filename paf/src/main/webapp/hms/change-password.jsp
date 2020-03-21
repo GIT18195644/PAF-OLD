@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>User | Dashboard</title>
+		<title>User | Change Password</title>
 		<meta charset="ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,6 +27,38 @@
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+		
+		<script type="text/javascript">
+			function valid()
+			{
+			if(document.chngpwd.cpass.value=="")
+			{
+			alert("Current Password Filed is Empty !!");
+			document.chngpwd.cpass.focus();
+			return false;
+			}
+			else if(document.chngpwd.npass.value=="")
+			{
+			alert("New Password Filed is Empty !!");
+			document.chngpwd.npass.focus();
+			return false;
+			}
+			else if(document.chngpwd.cfpass.value=="")
+			{
+			alert("Confirm Password Filed is Empty !!");
+			document.chngpwd.cfpass.focus();
+			return false;
+			}
+			else if(document.chngpwd.npass.value!= document.chngpwd.cfpass.value)
+			{
+			alert("Password and Confirm Password Field do not match  !!");
+			document.chngpwd.cfpass.focus();
+			return false;
+			}
+			return true;
+			}
+		</script>
+		
 	</head>
 	<body>
 		<div id="app">
@@ -151,75 +183,70 @@
 	<!----------------------------------------------------------------------------------------------------------------------->
 	<!-- T H I L I N I : B O D Y _ C O D E _ H E R E -->
 	
-				<div class="main-content" >
-					<div class="wrap-content container" id="container">
-						<!-- start: PAGE TITLE -->
-						<section id="page-title">
-							<div class="row">
-								<div class="col-sm-8">
-									<h1 class="mainTitle">User | Dashboard</h1>
-																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>User</span>
-									</li>
-									<li class="active">
-										<span>Dashboard</span>
-									</li>
-								</ol>
-							</div>
-						</section>
-						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
-							<div class="container-fluid container-fullw bg-white">
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">User Account</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="edit-profile.jsp">
-													Update Profile
-												</a>
-											</p>
-										</div>
-									</div>
+<div class="main-content" >
+	<div class="wrap-content container" id="container">
+		<!-- start: PAGE TITLE -->
+		<section id="page-title">
+		<div class="row">
+			<div class="col-sm-8">
+				<h1 class="mainTitle">User | Change Password</h1>
+			</div>
+			<ol class="breadcrumb">
+				<li>
+					<span>User</span>
+				</li>
+				<li class="active">
+					<span>Change Password</span>
+				</li>
+			</ol>
+		</div>
+		</section>
+		<!-- end: PAGE TITLE -->
+		<!-- start: BASIC EXAMPLE -->
+		<div class="container-fluid container-fullw bg-white">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row margin-top-30">
+						<div class="col-lg-8 col-md-12">
+							<div class="panel panel-white">
+								<div class="panel-heading">
+									<h5 class="panel-title">Change Password</h5>
 								</div>
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Appointments</h2>
+								<div class="panel-body">
+									<form role="form" name="chngpwd" method="post" onSubmit="return valid();">
+										<div class="form-group">
+											<label for="exampleInputEmail1">
+											Current Password
+											</label>
+											<input type="password" name="cpass" class="form-control"  placeholder="Enter Current Password">
+										</div>
+										<div class="form-group">
+											<label for="exampleInputPassword1">
+											New Password
+											</label>
+											<input type="password" name="npass" class="form-control"  placeholder="New Password">
+										</div>
+														
+										<div class="form-group">
+											<label for="exampleInputPassword1">
+											Confirm Password
+											</label>
+											<input type="password" name="cfpass" class="form-control"  placeholder="Confirm Password">
+										</div>
 										
-											<p class="cl-effect-1">
-												<a href="appointment-history.jsp">
-													View Appointment History
-												</a>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle"> Book New Appointment</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="book-appointment.jsp">
-													Book Appointment
-												</a>
-											</p>
-										</div>
-									</div>
+										<button type="submit" name="submit" class="btn btn-o btn-primary">
+										Submit
+										</button>
+									</form>
 								</div>
 							</div>
 						</div>
-						<!-- end: SELECT BOXES -->						
 					</div>
-				</div>
+				</div>	
+			</div>
+		</div>	
+	</div>
+</div>
 	
 	<!----------------------------------------------------------------------------------------------------------------------->
 		<footer>

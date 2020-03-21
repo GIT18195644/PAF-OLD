@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>User | Dashboard</title>
+		<title>User | Appointment History</title>
 		<meta charset="ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -151,82 +151,93 @@
 	<!----------------------------------------------------------------------------------------------------------------------->
 	<!-- T H I L I N I : B O D Y _ C O D E _ H E R E -->
 	
-				<div class="main-content" >
-					<div class="wrap-content container" id="container">
-						<!-- start: PAGE TITLE -->
-						<section id="page-title">
-							<div class="row">
-								<div class="col-sm-8">
-									<h1 class="mainTitle">User | Dashboard</h1>
-																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>User</span>
-									</li>
-									<li class="active">
-										<span>Dashboard</span>
-									</li>
-								</ol>
-							</div>
-						</section>
-						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
-							<div class="container-fluid container-fullw bg-white">
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">User Account</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="edit-profile.jsp">
-													Update Profile
-												</a>
-											</p>
+	<div class="main-content" >
+		<div class="wrap-content container" id="container">
+			<!-- start: PAGE TITLE -->
+			<section id="page-title">
+				<div class="row">
+					<div class="col-sm-8">
+						<h1 class="mainTitle">User  | Appointment History</h1>
+					</div>
+					<ol class="breadcrumb">
+						<li>
+							<span>User </span>
+						</li>
+						<li class="active">
+							<span>Appointment History</span>
+						</li>
+					</ol>
+				</div>
+			</section>
+			<!-- end: PAGE TITLE -->
+			<!-- start: BASIC EXAMPLE -->
+			<div class="container-fluid container-fullw bg-white">
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table table-hover" id="sample-table-1">
+							<thead>
+								<tr>
+									<th class="center">#</th>
+									<th class="hidden-xs">Doctor Name</th>
+									<th>Specialization</th>
+									<th>Consultancy Fee</th>
+									<th>Appointment Date / Time </th>
+									<th>Appointment Creation Date  </th>
+									<th>Current Status</th>
+									<th>Action</th>									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="center"></td>
+									<td class="hidden-xs"></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
 										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Appointments</h2>
-										
-											<p class="cl-effect-1">
-												<a href="appointment-history.jsp">
-													View Appointment History
-												</a>
-											</p>
+										<div class="visible-xs visible-sm hidden-md hidden-lg">
+											<div class="btn-group" dropdown is-open="status.isopen">
+												<button type="button" class="btn btn-primary btn-o btn-sm dropdown-toggle" dropdown-toggle>
+												<i class="fa fa-cog"></i>&nbsp;<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu pull-right dropdown-light" role="menu">
+													<li>
+														<a href="#">
+														Edit
+														</a>
+													</li>
+													<li>
+														<a href="#">
+														Share
+														</a>
+													</li>
+													<li>
+														<a href="#">
+														Remove
+														</a>
+													</li>
+												</ul>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle"> Book New Appointment</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="book-appointment.jsp">
-													Book Appointment
-												</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end: SELECT BOXES -->						
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
-	
+			</div>
+		</div>
+	</div>
+</div>
+
 	<!----------------------------------------------------------------------------------------------------------------------->
 		<footer>
 	<div class="footer-inner">
-		<div class="pull-left">
-			&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Ayurwedha Health Care Center</span>. <span>All rights reserved</span>
-		</div>
+		
 		<div class="pull-right">
 			<span class="go-top"><i class="ti-angle-up"></i></span>
 		</div>

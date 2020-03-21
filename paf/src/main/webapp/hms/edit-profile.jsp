@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>User | Dashboard</title>
+		<title>User | Edit Profile</title>
 		<meta charset="ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -151,82 +151,104 @@
 	<!----------------------------------------------------------------------------------------------------------------------->
 	<!-- T H I L I N I : B O D Y _ C O D E _ H E R E -->
 	
-				<div class="main-content" >
-					<div class="wrap-content container" id="container">
-						<!-- start: PAGE TITLE -->
-						<section id="page-title">
-							<div class="row">
-								<div class="col-sm-8">
-									<h1 class="mainTitle">User | Dashboard</h1>
-																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>User</span>
-									</li>
-									<li class="active">
-										<span>Dashboard</span>
-									</li>
-								</ol>
-							</div>
-						</section>
-						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
-							<div class="container-fluid container-fullw bg-white">
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">User Account</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="edit-profile.jsp">
-													Update Profile
-												</a>
-											</p>
-										</div>
+	<div class="main-content" >
+		<div class="wrap-content container" id="container">
+			<!-- start: PAGE TITLE -->
+			<section id="page-title">
+			<div class="row">
+				<div class="col-sm-8">
+					<h1 class="mainTitle">User | Edit Profile</h1>
+				</div>
+				<ol class="breadcrumb">
+					<li>
+						<span>User </span>
+					</li>
+					<li class="active">
+						<span>Edit Profile</span>
+					</li>
+				</ol>
+			</div>
+			</section>
+			<!-- end: PAGE TITLE -->
+			<!-- start: BASIC EXAMPLE -->
+			<div class="container-fluid container-fullw bg-white">
+				<div class="row">
+					<div class="col-md-12">							
+						<div class="row margin-top-30">
+							<div class="col-lg-8 col-md-12">
+								<div class="panel panel-white">
+									<div class="panel-heading">
+										<h5 class="panel-title">Edit Profile</h5>
 									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Appointments</h2>
+									<div class="panel-body">
+									
+										<form role="form" name="edit" method="post">
+											<div class="form-group">
+												<label for="fname">
+												 User Name
+												</label>
+												<input type="text" name="fname" class="form-control" >
+											</div>
+
+											<div class="form-group">
+												<label for="address">
+												 Address
+												</label>
+												<textarea name="address" class="form-control"></textarea>
+											</div>
+
+											<div class="form-group">
+												<label for="city">
+												 City
+												</label>
+												<input type="text" name="city" class="form-control" required="required">
+											</div>
+	
+											<div class="form-group">
+												<label for="gender">
+												Gender
+												</label>
+												<input type="text" name="gender" class="form-control" required="required">
+											</div>
+
+											<div class="form-group">
+												<label for="fess">
+												User Email
+												</label>
+												<input type="email" name="uemail" class="form-control"  readonly="readonly">
+											</div>
+									
+											<button type="submit" name="submit" class="btn btn-o btn-primary">
+											Update
+											</button>
+											
+											
+										</form>
 										
-											<p class="cl-effect-1">
-												<a href="appointment-history.jsp">
-													View Appointment History
-												</a>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle"> Book New Appointment</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="book-appointment.jsp">
-													Book Appointment
-												</a>
-											</p>
-										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- end: SELECT BOXES -->						
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="panel panel-white">
+										
+						</div>
+						
+						<a href="change-password.jsp">
+						<button name="cpw" class="btn btn-o btn-primary">
+						Change Password
+						</button></a>
 					</div>
 				</div>
-	
+			</div>
+		</div>
+	</div>
+</div>
 	<!----------------------------------------------------------------------------------------------------------------------->
 		<footer>
 	<div class="footer-inner">
-		<div class="pull-left">
-			&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Ayurwedha Health Care Center</span>. <span>All rights reserved</span>
-		</div>
+		
 		<div class="pull-right">
 			<span class="go-top"><i class="ti-angle-up"></i></span>
 		</div>
