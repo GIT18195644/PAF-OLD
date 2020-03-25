@@ -88,7 +88,7 @@
 						</div>
 						<div class="text list_1_of_2">
 							<h3>Accountant</h3>
-							<div class="button"><span><a href="#">Click Here</a></span></div>
+							<div class="button"><span><a href="hms/accountant/">Click Here</a></span></div>
 				    	</div>
 					</div>	
 					<!--end-Accounts-Login-Button-->
