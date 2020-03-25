@@ -210,15 +210,14 @@
 										<h5 class="panel-title">Book Appointment</h5>
 									</div>
 									<div class="panel-body">
-										<form role="form" name="book" method="post" >
+										<form role="form" name="book" action="accountant/payment.jsp" method="post" >
 											<div class="form-group">
 												<label for="DoctorSpecialization">
 												Doctor Specialization
 												</label>
 												<select name="Doctorspecialization" class="form-control" onChange="getdoctor(this.value);" required="required">
 												<option value="">Select Specialization</option>
-												<option value="<?php echo htmlentities($row['specilization']);?>">
-												</option>
+												<option value="">Demo</option>
 												</select>
 											</div>
 									
@@ -228,6 +227,7 @@
 												</label>
 												<select name="doctor" class="form-control" id="doctor" onChange="getfee(this.value);" required="required">
 												<option value="">Select Doctor</option>
+												<option value="">Demo</option>
 												</select>
 											</div>
 								
@@ -236,7 +236,7 @@
 												Consultancy Fees
 												</label>
 												<select name="fees" class="form-control" id="fees"  readonly>
-						
+												<option value="">2000</option>
 												</select>
 											</div>
 														
@@ -272,9 +272,7 @@
 	<!----------------------------------------------------------------------------------------------------------------------->
 		<footer>
 	<div class="footer-inner">
-		<div class="pull-left">
-			&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Ayurwedha Health Care Center</span>. <span>All rights reserved</span>
-		</div>
+		
 		<div class="pull-right">
 			<span class="go-top"><i class="ti-angle-up"></i></span>
 		</div>
