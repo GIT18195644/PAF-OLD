@@ -76,7 +76,7 @@
 						</div>
 						<div class="text list_1_of_2">
 							<h3>Doctors</h3>
-							<div class="button"><span><a href="#">Click Here</a></span></div>
+							<div class="button"><span><a href="hms/doctor/">Click Here</a></span></div>
 						</div>
 					</div>
 					<!--end-Doctor-Login-Button-->
