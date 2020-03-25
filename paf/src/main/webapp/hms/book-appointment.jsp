@@ -236,7 +236,7 @@
 												Consultancy Fees
 												</label>
 												<select name="fees" class="form-control" id="fees"  readonly>
-												<option value="">2000</option>
+												<option value=""></option>
 												</select>
 											</div>
 														
